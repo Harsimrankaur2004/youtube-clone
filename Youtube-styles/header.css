@@ -17,7 +17,6 @@ header{
 .left-section{
     display: flex;
     align-items: center;
-    
 }
 
 .hamburger-menu{
@@ -153,3 +152,54 @@ header{
     background-color: white;
     border-radius: 30px;
 }
+
+/* Small screens (phones < 600px) */
+@media (max-width: 599px) {
+    .hamburger-menu,
+    .right-section {
+      display: none;
+    }
+  
+    .left-section {
+        margin-left: 15px;
+    }
+    .search-bar {
+      font-size: 14px;
+    }
+  
+    .search-button {
+      width: 50px;
+    }
+  }
+  
+  /* Tablets (600px to 899px) */
+  @media (min-width: 600px) and (max-width: 899px) {
+    .middle-section {
+      margin: 0 8px;
+    }
+  
+    .search-bar {
+      font-size: 15px;
+    }
+  
+    .search-button {
+      width: 60px;
+    }
+  }
+  
+  /* Larger screens (≥ 900px) */
+  @media (min-width: 900px) {
+    .middle-section {
+      margin: 0 24px;
+      max-width: 500px;
+    }
+  
+    .search-bar {
+      font-size: 16px;
+    }
+  
+    .search-button {
+      width: 66px;
+    }
+  }
+  

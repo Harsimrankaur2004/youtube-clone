@@ -1,78 +1,107 @@
-
-
-.thumbnail{
+/* 🌐 Base layout (mobile-first) */
+.video-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* One column by default (phones) */
+    gap: 16px;
+    padding: 12px;
+  }
+  
+  /* 📷 Thumbnail */
+  .thumbnail {
     width: 100%;
-   
-}
-
-.tick{
-    color: white;
-    background-color: rgb(96, 96, 96);
-    padding:1px 2px;
-    border-radius: 30px;
-    font-size: 10px;
-    margin-left: 3px;
-}
-
-.video-title{
-    margin-top: 0;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 20px;
-    margin-bottom: 10px;
-    color: black;
-}
-.video-author, 
-.video-stats{
-    font-size: 12px;
-    color: rgb(96, 96, 96);
-}
-.video-author{
-    margin-bottom: 4px;
-}
-
-.video-grid{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 16px;
-    row-gap: 40px;
-    
-}
-
-@media (max-width: 800px){
-    .video-grid{
-        grid-template-columns: 1fr 1fr;
-    }
-}
-
-
-
-
-
-.video-info-grid{
-    display: grid;
-    grid-template-columns: 50px 1fr;
-    
-}
-
-.profile-picture{
-    width: 36px;
-    border-radius: 50px;
-}
-.thumbnail-row{
-    margin-bottom: 8px;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+  }
+  
+  .thumbnail-row {
     position: relative;
-}
-
-.video-time{
-   
-    font-size: 12px;
-    font-weight: 500;
-    padding: 4px;
-    border-radius: 2px;
+    margin-bottom: 8px;
+  }
+  
+  /* ⏱ Time badge */
+  .video-time {
+    position: absolute;
+    bottom: 10px;
+    right: 5px;
     background-color: black;
     color: white;
-    position: absolute;
-    right: 5px;
-    bottom: 10px;
-}
+    font-size: 12px;
+    font-weight: 500;
+    padding: 4px 6px;
+    border-radius: 3px;
+  }
+  
+  /* 👤 Info section */
+  .video-info-grid {
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    gap: 10px;
+    align-items: flex-start;
+  }
+  
+  .profile-picture {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .video-title {
+    margin: 0 0 6px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.4;
+    color: #000;
+  }
+  
+  .video-author,
+  .video-stats {
+    font-size: 13px;
+    color: rgb(96, 96, 96);
+    line-height: 1.3;
+  }
+  
+  .video-author {
+    margin-bottom: 4px;
+  }
+  
+  /* ✅ Verified tick */
+  .tick {
+    display: inline-block;
+    margin-left: 4px;
+    background-color: rgb(96, 96, 96);
+    color: white;
+    font-size: 10px;
+    border-radius: 50px;
+    padding: 1px 5px;
+  }
+  
+/* Tablets (≥ 500px): 2 columns */
+@media (min-width: 500px) {
+    .video-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  /* Small laptops (≥ 768px): 3 columns */
+  @media (min-width: 768px) {
+    .video-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  /* Desktops (≥ 1024px): 4 columns */
+  @media (min-width: 1024px) {
+    .video-grid {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  
+  /* Large desktops (≥ 1400px): 5 columns */
+  @media (min-width: 1400px) {
+    .video-grid {
+      grid-template-columns: repeat(5, 1fr);
+    }
+  }
+    

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Youtube.com Clone</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="Youtube-styles/general.css">
+    <link rel="stylesheet" href="Youtube-styles/header.css">
+    <link rel="stylesheet" href="Youtube-styles/video.css">
+    <link rel="stylesheet" href="Youtube-styles/sidebar.css">
+</head>
+
+<body>
+    <header>
+        <div class="left-section">
+            <img class="hamburger-menu" src="ICONS/hamburger-menu.svg">
+            <img class="youtube-logo" src="ICONS/youtube-logo.svg">
+        </div>
+        <div class="middle-section">
+            <input class="search-bar js-search-bar" type="text" placeholder="Search">
+            <button class="search-button js-search-button">
+                <img class="search-icon" src="ICONS/search.svg">
+                <div class="tooltip">Search</div>
+            </button>
+            <button class="voice-search-button">
+                <img class="voice-search-icon" src="ICONS/voice-search-icon.svg">
+                <div class="tooltip">Search with your voice</div>
+
+            </button>
+        </div>
+        <div class="right-section">
+            <div class="threedot-icon-container">
+                <img class="threedot-icon" src="ICONS/threedot.png">
+                <div class="tooltip">Settings</div>
+
+            </div>
+            <button class="signIn-button"><img class="signIn" src="ICONS/signIn.png"></button>
+    </header>
+
+    <nav class="sidebar">
+        <div class="sidebar-link">
+            <img src="ICONS/home.svg">
+            <div>Home</div>
+        </div>
+        <div class="sidebar-link">
+            <img src="ICONS/shorts.png">
+            <div>shorts</div>
+        </div>
+        <div class="sidebar-link">
+            <img src="ICONS/subscriptions.png">
+            <div>subscriptions</div>
+        </div>
+        <div class="sidebar-link">
+            <img src="ICONS/you.png">
+            <div>You</div>
+        </div>
+        <div class="sidebar-link">
+            <img src="ICONS/history.png">
+            <div>History</div>
+        </div>
+        </div>
+
+    </nav>
+    <main>
+        <section class="video-grid js-video-grid">
+        </section>
+    </main>
+
+    <script type="module" src="scripts/youtube.js"></script>
+</body>
+
+</html>

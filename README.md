@@ -31,7 +31,7 @@
 
 ## 📸 Screenshot
 
-  <img src="screenshot.png" alt="Weather App" width="400"/>
+  <img src="screenshot.png" alt="YouTube clone" width="400"/>
 
 ## 🛠️ Tech Stack
 
@@ -54,3 +54,4 @@
 
 
    [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+

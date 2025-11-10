@@ -45,4 +45,12 @@
 
   - Search works only within the provided videos.
 
+
   - Fully responsive for all devices.
+
+## 📜 License
+
+   This project is licensed under the MIT License — you’re free to use and modify it.
+
+
+   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
